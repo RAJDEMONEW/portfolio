@@ -1,0 +1,24 @@
+footer{
+    background: hwb(271 0% 56%);
+    padding: 8rem 0rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    font-weight: 300;
+    font-size: large;
+
+}
+footer a{
+    color: rgba(246, 246, 101, 0.859);
+}
+/* footer>a {
+    background-color: black;
+    border-radius: 10px;
+    padding: 3px 10px;
+    
+} */
+.footer_logo{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    display: inline-block;
+}

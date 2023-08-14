@@ -1,0 +1,106 @@
+.about_container{
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap:15%
+
+}
+.about_me{
+    width: 100%;
+    aspect-ratio: 1/1 ;
+    border-radius: 10px;
+    background:linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    display: grid;
+    border-radius: 13px;
+    place-items: center;
+}
+.about_me-image{
+    border-radius: 10px;
+    border-radius:3rem;
+    /* transform:rotate(370deg) ; */
+    transition: var(--transition);
+ }
+.about_me-image:hover{
+    transform: rotate(10deg);
+
+}
+/* img :hover{
+   transform: rotate((0deg)); }*/
+
+
+/* .about_card_back{
+   background: linear-gradient(rgba(251, 231, 231, 0.268),pink);
+   border-radius: 25px;
+} */
+
+  .about_cards{
+   /* transform: rotate(10deg); */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+ }
+ 
+ .about_card{
+   transition: var(--transition);
+      /* transform: rotateZ(10deg); */
+      /* transform-origin: 2px 1px; */
+    background: rgb(243, 195, 243);
+    /* background-image: linear-gradient(red,pink); */
+    border:1px solid transparent;
+    border-radius: 1rem;
+    padding:2rem;
+    margin: 35px;
+    text-align: center;
+ } 
+ .about_card:hover{
+      transform: rotateX(0deg);
+      
+    /* background: transparent; */
+    /* background-color: var(--color-primary-variant); */
+    cursor: default;
+ }
+ .about_card h5{
+    font-size: .95rem;
+ }
+ .about_card small{
+    font-size: 0.7rem;
+    color: var(--color-light);
+ }
+ .about_content p{
+    margin: 1rem 1.5rem;
+ }
+ @media screen and (max-width:1024px) {
+ .about_container{
+    grid-template-columns: 1fr;
+    gap:0;
+ }
+ .about_me{
+    width: 50%;
+    margin: 2rem auto 4rem;
+
+ }
+ .about_content p{
+    margin: 1rem 0 1.5 rem; 
+ }
+
+    
+ }
+ @media screen and (max-width:600px) {
+    .about_me{
+        width: 65%;
+        margin: 0rem auto 3rem;
+
+    }
+    .about_cards{display: inline-flex;
+        flex-direction: column;
+
+    }
+    #about{margin-top:0px}
+    .about_content{
+        text-align: center;
+    }
+    .about_content p{
+        margin: 1.5rem 0;
+    }
+
+    
+ }
